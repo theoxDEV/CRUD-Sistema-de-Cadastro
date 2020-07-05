@@ -1,5 +1,16 @@
 <?php include 'cabeca.php';  ?>
-<?php include 'backend/conexao.php'; ?>
+<?php include "backend/incluirCadastro.php"; ?>
+
+    <!-- TIPO DE MENSAGEM EM QUALQUER AÇÃO -->
+    <?php
+    if(isset($_SESSION['message'])): ?>
+        <div class="alert alert-<?=$_SESSION['msg_type']?>">
+            <?php
+                echo $_SESSION['message'];
+            ?>
+		</div>
+	
+    <?php endif ?>
         	
             <div id="listaPessoas">
 				<h1>Início</h1>
@@ -20,8 +31,7 @@
 							</tr>
 						</thead>
 				</div>
-				<?php
-					while($row = $result->fetch_assoc()):?>
+				<?php while($row = $result->fetch_assoc()):?>
 				<!-- PREENCHIMENTO DA TABELA DE REGISTRO -->
 				<tr>
                 <td><?php echo $row["cNome"]; ?></td>

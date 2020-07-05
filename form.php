@@ -16,7 +16,7 @@
 		
         <label for="cFoto">Foto</label><br />
         <input id="cFoto" name="cFoto" type="file"><br />   
-        <button type="submit" value='Submit' name='submit'href="backend/incluirCadastro" class="btSave">Salvar</td>   
+        <button type="submit" value='Submit' name='save'href="backend/incluirCadastro" class="btSave">Salvar</td>   
     </form>
 </div>
 
