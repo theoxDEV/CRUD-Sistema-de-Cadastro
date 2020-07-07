@@ -4,15 +4,15 @@
 
     <h1>Incluindo um Novo Cadastro</h1>
    
-    <form id="formCadastrar" method="post" enctype="multipart/form-data" action="backend/incluirCadastro.php">
+    <form id="formCadastrar" action="backend/incluirCadastro.php" method="POST" enctype="multipart/form-data">
         <label for="cNome">Nome</label><br />
-        <input id="cNome" name="cNome"><br >
+        <input id="cNome" name="cNome" placeholder="Digite seu nome:"><br >
 
         <label for="cDataNasc">Data de Nascimento</label><br />
         <input id="cDataNasc" name="cDataNasc" type="date"><br />
 
         <label for="cEmail">E-Mail</label><br />
-        <input id="cEmail" name="cEmail"><br />
+        <input id="cEmail" name="cEmail" placeholder="Email"><br />
 		
         <label for="cFoto">Foto</label><br />
         <input id="cFoto" name="cFoto" type="file"><br />   

@@ -33,11 +33,6 @@
 				</div>
 				<?php while($row = $result->fetch_assoc()):?>
 				<!-- PREENCHIMENTO DA TABELA DE REGISTRO -->
-				<tr>
-                <td><?php echo $row["cNome"]; ?></td>
-				<td><?php echo $row['cDtNasc']; ?></td>
-				<td><?php echo $row['cEmail']; ?></td>
-				<td><?php echo $row['cFoto']; ?></td>
             </tr>
         <?php endwhile; ?>
         </table>
